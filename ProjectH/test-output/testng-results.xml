@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[browser set up done]]>
+    </line>
+    <line>
+      <![CDATA[logout]]>
+    </line>
+    <line>
+      <![CDATA[browser terminate done]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-07-28T12:03:47 IST" name="Default suite" finished-at="2025-07-28T12:04:05 IST" duration-ms="18305">
+    <groups>
+      <group name="RT">
+        <method signature="Example2Test.Addproduct(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:producttest.Example2Test@367ffa75]" name="Addproduct" class="producttest.Example2Test"/>
+      </group> <!-- RT -->
+    </groups>
+    <test started-at="2025-07-28T12:03:47 IST" name="Default test" finished-at="2025-07-28T12:04:05 IST" duration-ms="18305">
+      <class name="producttest.Example2Test">
+        <test-method is-config="true" signature="Browsersetup()[pri:0, instance:producttest.Example2Test@367ffa75]" started-at="2025-07-28T12:03:47 IST" name="Browsersetup" finished-at="2025-07-28T12:03:51 IST" duration-ms="4015" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[browser set up done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Browsersetup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:producttest.Example2Test@367ffa75]" started-at="2025-07-28T12:03:52 IST" name="login" finished-at="2025-07-28T12:03:56 IST" duration-ms="4365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="Addproduct(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:producttest.Example2Test@367ffa75]" started-at="2025-07-28T12:03:56 IST" name="Addproduct" data-provider="checkOutInfo" finished-at="2025-07-28T12:04:04 IST" duration-ms="8279" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sree]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ 500091]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at producttest.Example2Test.Addproduct(Example2Test.java:150)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Addproduct -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:producttest.Example2Test@367ffa75]" started-at="2025-07-28T12:04:04 IST" name="logout" finished-at="2025-07-28T12:04:05 IST" duration-ms="385" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[logout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="BrowserTerminate()[pri:0, instance:producttest.Example2Test@367ffa75]" started-at="2025-07-28T12:04:05 IST" name="BrowserTerminate" finished-at="2025-07-28T12:04:05 IST" duration-ms="382" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[browser terminate done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BrowserTerminate -->
+      </class> <!-- producttest.Example2Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
