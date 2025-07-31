@@ -149,7 +149,7 @@ public class Example2Test extends BaseConfig {
 
 		// Assert.assertEquals(driver.getTitle(), "Checkout: Your Information");
 
-		saobj.assertEquals(driver.getTitle(), "Swag Labs");
+		Assert.assertEquals(driver.getTitle(), "Swag Labs");
 		
 
 		// create paymentpage object
@@ -167,11 +167,11 @@ public class Example2Test extends BaseConfig {
 		String thankyou = cpobj.getcart().getText();
 		System.out.println(thankyou);
 
-		saobj.assertEquals(driver.getTitle(), "Swag Labs");
-		saobj.assertAll();
+		Assert.assertEquals(driver.getTitle(), "Swag Labs");
+	
 
 		tkobj.getbackhomebutton().click();
-		saobj.assertAll();
+		
 		//Assert.fail();
 	}	
 		@Test

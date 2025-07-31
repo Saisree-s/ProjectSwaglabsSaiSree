@@ -160,7 +160,7 @@ public ExtentTest test;
 
 		// validate the logoutmenu
 		Assert.assertTrue(lgobj.getlogoutbutton().isEnabled());
-		saobj.assertEquals(lgobj.getlogoutbutton().isDisplayed(), true);
+		Assert.assertEquals(lgobj.getlogoutbutton().isDisplayed(), true);
 		// click on logoutbutton
 		WebDriverLibrary.elementclick(lgobj.getlogoutbutton());
 
