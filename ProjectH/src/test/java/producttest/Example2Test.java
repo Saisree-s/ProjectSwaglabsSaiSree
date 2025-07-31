@@ -6,6 +6,9 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
 import pagerepository.CheckoutPage;
 import pagerepository.HomePage;
 import pagerepository.PaymentPage;
@@ -17,17 +20,38 @@ import genericlibrary.BaseConfig;
 public class Example2Test extends BaseConfig {
 	@Test(groups = "RT",priority = 1, enabled = true, invocationCount = 1,dataProvider = "checkOutInfo")
 	public void Addproduct(String FirstName,String LastName,String PostalCode) throws InterruptedException {
+		 test = report.createTest("RegressionTest");
 
+		// steps information
+		test.log(Status.INFO, "Step1:Launching The Browser Succesfully");
+
+		test.log(Status.INFO, "Step2:Navigate to the application via url Succesfully");
+
+		test.log(Status.INFO, "Step3:Verified the webpage Succesfully");
+
+		
 		// wait method
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
 		// addproducts
 		HomePage hmobj = new HomePage(driver);
+		
+		
 		// click on 5th product
 		hmobj.getfifthproduct().click();
 
 		Assert.assertTrue(hmobj.getfifthproduct().isDisplayed());
+		
+		if (true == true) {
+			test.log(Status.PASS, "Step4:Verified the Webelement Displayed Succesfully");
+		} else {
+			test.log(Status.FAIL, "Step4:Verified the Webelement not Displayed Succesfully");
+
+		}
+
 		Assert.assertTrue(hmobj.getfifthproduct().isEnabled());
+		
+		
 
 		Assert.assertTrue(hmobj.getaddtocartbutton1().isDisplayed());
 		Assert.assertTrue(hmobj.getaddtocartbutton1().isEnabled());
@@ -126,7 +150,7 @@ public class Example2Test extends BaseConfig {
 		// Assert.assertEquals(driver.getTitle(), "Checkout: Your Information");
 
 		saobj.assertEquals(driver.getTitle(), "Swag Labs");
-		saobj.assertAll();
+		
 
 		// create paymentpage object
 		PaymentPage pyobj = new PaymentPage(driver);
@@ -147,7 +171,28 @@ public class Example2Test extends BaseConfig {
 		saobj.assertAll();
 
 		tkobj.getbackhomebutton().click();
+		saobj.assertAll();
 		//Assert.fail();
+	}	
+		@Test
+		public void Addproduct2() {
+			// create the test information
+
+			test = report.createTest("RegressionTest");
+
+			// steps information
+			test.log(Status.INFO, "Step1:Launching The Browser Succesfully");
+
+		}
+		@Test
+		public void Addproduct3() {
+			// create the test information
+
+			test = report.createTest("RegressionTest");
+
+			// steps information
+			test.log(Status.INFO, "Step1:Launching The Browser Succesfully");
+
+		}
 	}
 
-}

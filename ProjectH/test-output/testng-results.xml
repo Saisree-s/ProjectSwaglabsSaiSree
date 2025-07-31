@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[browser set up done]]>
@@ -8,29 +8,76 @@
       <![CDATA[logout]]>
     </line>
     <line>
+      <![CDATA[logout]]>
+    </line>
+    <line>
+      <![CDATA[logout]]>
+    </line>
+    <line>
       <![CDATA[browser terminate done]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-07-28T12:03:47 IST" name="Default suite" finished-at="2025-07-28T12:04:05 IST" duration-ms="18305">
+  <suite started-at="2025-07-31T11:10:15 IST" name="RegressionSuite " finished-at="2025-07-31T11:10:42 IST" duration-ms="27247">
     <groups>
       <group name="RT">
-        <method signature="Example2Test.Addproduct(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:producttest.Example2Test@367ffa75]" name="Addproduct" class="producttest.Example2Test"/>
+        <method signature="Example2Test.Addproduct(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:producttest.Example2Test@7817fd62]" name="Addproduct" class="producttest.Example2Test"/>
       </group> <!-- RT -->
     </groups>
-    <test started-at="2025-07-28T12:03:47 IST" name="Default test" finished-at="2025-07-28T12:04:05 IST" duration-ms="18305">
+    <test started-at="2025-07-31T11:10:15 IST" name="Test" finished-at="2025-07-31T11:10:42 IST" duration-ms="27247">
       <class name="producttest.Example2Test">
-        <test-method is-config="true" signature="Browsersetup()[pri:0, instance:producttest.Example2Test@367ffa75]" started-at="2025-07-28T12:03:47 IST" name="Browsersetup" finished-at="2025-07-28T12:03:51 IST" duration-ms="4015" status="PASS">
+        <test-method is-config="true" signature="ReportSetup()[pri:0, instance:producttest.Example2Test@7817fd62]" started-at="2025-07-31T11:10:15 IST" name="ReportSetup" finished-at="2025-07-31T11:10:15 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportSetup -->
+        <test-method is-config="true" signature="Browsersetup(java.lang.String)[pri:0, instance:producttest.Example2Test@7817fd62]" started-at="2025-07-31T11:10:15 IST" name="Browsersetup" finished-at="2025-07-31T11:10:17 IST" duration-ms="2248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[browser set up done]]>
             </line>
           </reporter-output>
         </test-method> <!-- Browsersetup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:producttest.Example2Test@367ffa75]" started-at="2025-07-28T12:03:52 IST" name="login" finished-at="2025-07-28T12:03:56 IST" duration-ms="4365" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:producttest.Example2Test@7817fd62]" started-at="2025-07-31T11:10:17 IST" name="login" finished-at="2025-07-31T11:10:22 IST" duration-ms="5000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="Addproduct(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:producttest.Example2Test@367ffa75]" started-at="2025-07-28T12:03:56 IST" name="Addproduct" data-provider="checkOutInfo" finished-at="2025-07-28T12:04:04 IST" duration-ms="8279" status="FAIL">
+        <test-method signature="Addproduct2()[pri:0, instance:producttest.Example2Test@7817fd62]" started-at="2025-07-31T11:10:22 IST" name="Addproduct2" finished-at="2025-07-31T11:10:22 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Addproduct2 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:producttest.Example2Test@7817fd62]" started-at="2025-07-31T11:10:22 IST" name="logout" finished-at="2025-07-31T11:10:23 IST" duration-ms="443" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[logout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:producttest.Example2Test@7817fd62]" started-at="2025-07-31T11:10:23 IST" name="login" finished-at="2025-07-31T11:10:27 IST" duration-ms="4435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="Addproduct3()[pri:0, instance:producttest.Example2Test@7817fd62]" started-at="2025-07-31T11:10:27 IST" name="Addproduct3" finished-at="2025-07-31T11:10:27 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Addproduct3 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:producttest.Example2Test@7817fd62]" started-at="2025-07-31T11:10:27 IST" name="logout" finished-at="2025-07-31T11:10:28 IST" duration-ms="436" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[logout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:producttest.Example2Test@7817fd62]" started-at="2025-07-31T11:10:28 IST" name="login" finished-at="2025-07-31T11:10:32 IST" duration-ms="4580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="Addproduct(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:producttest.Example2Test@7817fd62]" started-at="2025-07-31T11:10:32 IST" name="Addproduct" data-provider="checkOutInfo" finished-at="2025-07-31T11:10:41 IST" duration-ms="8370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,62 +95,28 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at producttest.Example2Test.Addproduct(Example2Test.java:150)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Addproduct -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:producttest.Example2Test@367ffa75]" started-at="2025-07-28T12:04:04 IST" name="logout" finished-at="2025-07-28T12:04:05 IST" duration-ms="385" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:producttest.Example2Test@7817fd62]" started-at="2025-07-31T11:10:41 IST" name="logout" finished-at="2025-07-31T11:10:41 IST" duration-ms="356" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[logout]]>
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="BrowserTerminate()[pri:0, instance:producttest.Example2Test@367ffa75]" started-at="2025-07-28T12:04:05 IST" name="BrowserTerminate" finished-at="2025-07-28T12:04:05 IST" duration-ms="382" status="PASS">
+        <test-method is-config="true" signature="BrowserTerminate()[pri:0, instance:producttest.Example2Test@7817fd62]" started-at="2025-07-31T11:10:41 IST" name="BrowserTerminate" finished-at="2025-07-31T11:10:41 IST" duration-ms="279" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[browser terminate done]]>
             </line>
           </reporter-output>
         </test-method> <!-- BrowserTerminate -->
+        <test-method is-config="true" signature="ReportTerminate()[pri:0, instance:producttest.Example2Test@7817fd62]" started-at="2025-07-31T11:10:41 IST" name="ReportTerminate" finished-at="2025-07-31T11:10:42 IST" duration-ms="730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportTerminate -->
       </class> <!-- producttest.Example2Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- RegressionSuite  -->
 </testng-results>
