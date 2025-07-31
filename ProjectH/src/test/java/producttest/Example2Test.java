@@ -20,7 +20,7 @@ import genericlibrary.BaseConfig;
 public class Example2Test extends BaseConfig {
 	@Test(groups = "RT",priority = 1, enabled = true, invocationCount = 1,dataProvider = "checkOutInfo")
 	public void Addproduct(String FirstName,String LastName,String PostalCode) throws InterruptedException {
-		 test = report.createTest("RegressionTest");
+		 test = report.createTest("Addproduct 1");
 
 		// steps information
 		test.log(Status.INFO, "Step1:Launching The Browser Succesfully");
@@ -178,20 +178,20 @@ public class Example2Test extends BaseConfig {
 		public void Addproduct2() {
 			// create the test information
 
-			test = report.createTest("RegressionTest");
+			test = report.createTest("Addproduct2");
 
 			// steps information
-			test.log(Status.INFO, "Step1:Launching The Browser Succesfully");
+			test.log(Status.INFO, "Addproduct3");
 
 		}
 		@Test
 		public void Addproduct3() {
 			// create the test information
 
-			test = report.createTest("RegressionTest");
+			test = report.createTest("Addproduct3");
 
 			// steps information
-			test.log(Status.INFO, "Step1:Launching The Browser Succesfully");
+			test.log(Status.INFO, "Addproduct3");
 
 		}
 	}
